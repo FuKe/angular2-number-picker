@@ -3,7 +3,7 @@
 
 A generic number picker Angular component (v. 2.0.0+) for Twitter Bootstrap
 
-![](https://raw.githubusercontent.com/fuke/angular2-number-picker/master/docs/images/example.png)
+![](https://raw.githubusercontent.com/FuKe/angular2-number-picker/master/docs/images/example.png)
 
 ## Requirements ##
 * [Angular](https://angular.io) (2.0.0+)
