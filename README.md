@@ -1,5 +1,6 @@
 # angular2-number-picker #
 [![GitHub version](https://badge.fury.io/gh/FuKe%2Fangular2-number-picker.svg)](https://badge.fury.io/gh/FuKe%2Fangular2-number-picker)
+[![NPM version][npm-image]][npm-url]
 
 A generic number picker Angular component (v. 2.0.0+) for Twitter Bootstrap
 
@@ -54,3 +55,7 @@ Add the `angular2-number-picker` directive to the page where you want to use the
 | precision | [input] Number | No | The decimal precision for the number picker, if the step input value is a decimal value. 1 by default |
 | inputDisabled | [input] Boolean | No | Defines if the input input should be disabled / editable by the user. false by default |
 | onChange | (output) Number | No | The onChange event of the component. Emits the value of the number picker, every time the user has clicked the - or + button. |
+
+
+[npm-url]: https://npmjs.org/package/angular2-number-picker
+[npm-image]: https://badge.fury.io/js/angular2-number-picker.png
