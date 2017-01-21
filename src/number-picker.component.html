@@ -1,0 +1,9 @@
+<div class="input-group">	
+	<div class="input-group-btn">
+		<button class="btn btn-primary" (click)="decreaseValue()">-</button>
+	</div>
+	<input [formControl]="numberPicker" class="form-control" type="number" min="{{min}}" max="{{max}}" pattern="{{pattern}}"/>	
+	<div class="input-group-btn">
+		<button class="btn btn-primary" (click)="increaseValue()">+</button>
+	</div>
+</div>

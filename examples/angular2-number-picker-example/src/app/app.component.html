@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>{{title}}</h1>
+		</div>		
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			<angular2-number-picker [min]="1" [max]="6" [step]="1" [precision]="1" [pattern]="regEx" [inputDisabled]="true" (onChange)="onNumberChanged($event)"></angular2-number-picker>
+		</div>
+		<div class="col-sm-12 col-md-12">
+			<p>Current value is: {{numPickValue}}</p>
+		</div>
+	</div>
+</div>

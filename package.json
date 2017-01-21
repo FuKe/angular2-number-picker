@@ -1,0 +1,39 @@
+{
+  "name": "angular2-number-picker",
+  "description": "A generic number picker Angular component (v. 2.0.0+) for Twitter Bootstrap",
+  "version": "0.8.3",
+  "author": "fuke93@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FuKe/angular2-number-picker.git"
+  },
+  "keywords": [
+    "Angular",
+    "2",
+    "number",
+    "picker",
+    "bootstrap"
+  ],
+  "bugs": {
+    "url": "https://github.com/FuKe/angular2-number-picker/issues"
+  },
+  "scripts": {
+    "watch": "tsc -p src -w",
+    "build": "rm -rf lib && tsc -p src"
+  },
+  "private": false,
+  "dependencies": {
+    "@angular/common": "^2.4.4",
+    "@angular/compiler": "^2.4.4",
+    "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
+    "@angular/platform-browser": "^2.4.4",
+    "@angular/platform-browser-dynamic": "^2.4.4",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "typescript": "~2.1.5"
+  }
+}
