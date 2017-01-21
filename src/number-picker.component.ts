@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'angular2-number-picker',
@@ -30,7 +30,6 @@ export class NumberPickerComponent implements OnInit {
 	@Input() max: number;
 	@Input() step: number;
 	@Input() precision: number;
-	@Input() pattern: RegExp;
 	@Input() inputDisabled: boolean;
 	@Output() onChange: EventEmitter<number> = new EventEmitter();
 
@@ -39,14 +38,23 @@ export class NumberPickerComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit() {		
-		if(this.pattern == null) {
-			let patternStr : string = '[' + this.min + '-' + this.max + ']*';
-			this.pattern = new RegExp(patternStr);			
-		}		
 		if(this.inputDisabled == null) {
 			this.inputDisabled = false;
 		}		
-		this.numberPicker = new FormControl({value: this.min, disabled: this.inputDisabled}, Validators.pattern(this.pattern));
+    if(this.min == null) {
+      this.min = 0;
+    }
+    if(this.max == null) {
+      this.max = 100;
+    }
+    if(this.precision == null) {
+      this.precision = 1;
+    }
+    if(this.step == null) {
+      this.step = 1;
+    }
+
+		this.numberPicker = new FormControl({value: this.min, disabled: this.inputDisabled});
 		this.numberPicker.registerOnChange(() => {
 			this.onChange.emit(this.numberPicker.value);
 		});

@@ -1,7 +1,7 @@
 {
   "name": "angular2-number-picker",
   "description": "A generic number picker Angular component (v. 2.0.0+) for Twitter Bootstrap",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "author": "fuke93@gmail.com",
   "license": "MIT",
   "repository": {

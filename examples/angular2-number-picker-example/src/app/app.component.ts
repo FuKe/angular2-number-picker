@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	private title : string = 'Angular Number Picker Example';
-	private regEx : string = '[1-6]*';
-	private numPickValue: number;
+	private numPickValue: number = 1;
 
 	private onNumberChanged(value:number) {
 		this.numPickValue = value;
