@@ -1,5 +1,5 @@
 # angular2-number-picker #
-[![GitHub version](https://badge.fury.io/gh/FuKe%2Fangular-number-picker.svg)](https://badge.fury.io/gh/FuKe%2Fangular-number-picker)
+[![GitHub version](https://badge.fury.io/gh/FuKe%2Fangular2-number-picker.svg)](https://badge.fury.io/gh/FuKe%2Fangular2-number-picker)
 
 A generic number picker Angular component (v. 2.0.0+) for Twitter Bootstrap
 
@@ -19,7 +19,7 @@ npm install angular2-number-picker -save
 
 ## Basic usage ##
 Import the NumberPickerComponent in your `app.module` and add it to the declarations array.
-Alternatively, you can import the NumberPickerComponent to a shared module, to make available across all modules in your Angular application.
+Alternatively, you can import the NumberPickerComponent to a shared module, to make it available across all modules in your Angular application.
 
 ```javascript
 ...
