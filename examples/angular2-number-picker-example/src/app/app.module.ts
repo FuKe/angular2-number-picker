@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NumberPickerComponent } from 'angular2-number-picker/components';
+//import { NumberPickerComponent } from '../../../../components';
 
 import { AppComponent } from './app.component';
 

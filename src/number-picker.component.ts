@@ -4,7 +4,7 @@ import { FormControl } from '@angular/forms';
 @Component({
   selector: 'angular2-number-picker',
   template: `
-    <div class="input-group">  
+    <span class="input-group">  
       <div class="input-group-btn">
         <button class="btn btn-primary" (click)="decreaseValue()">-</button>
       </div>
@@ -12,7 +12,7 @@ import { FormControl } from '@angular/forms';
       <div class="input-group-btn">
         <button class="btn btn-primary" (click)="increaseValue()">+</button>
       </div>
-    </div>
+    </span>
   `,
   styles: [`
     input[type=number]::-webkit-inner-spin-button, 
