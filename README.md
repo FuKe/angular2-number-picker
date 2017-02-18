@@ -21,10 +21,12 @@ npm install angular2-number-picker -save
 ## Basic usage ##
 Import the NumberPickerComponent in your `app.module` and add it to the declarations array.
 Alternatively, you can import the NumberPickerComponent to a shared module, to make it available across all modules in your Angular application.
+You need to import the Angular FormsModule and ReactiveFormsModule as well.
 
 ```javascript
 ...
 import { NumberPickerComponent } from 'angular2-number-picker/components';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -33,6 +35,8 @@ import { AppComponent } from './app.component';
     NumberPickerComponent
   ],
   imports: [
+    FormsModule, 
+    ReactiveFormsModule
     ...
   ],
   providers: [],
